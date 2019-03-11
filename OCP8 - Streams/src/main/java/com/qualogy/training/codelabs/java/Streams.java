@@ -62,7 +62,7 @@ public class Streams {
      * This method takes a collection and expects you to chain what you have learned in your previous codelabs, in the previous codelab only one operation was called upon the stream, this test requires you to call multiple
      * log to system out println upon entry, filter your stream, log the outcome of that and count the results
      */
-    public long chain_different_stream_operations_log_filter_log_and_count_the_collection(Predicate<String> filterFunction, Collection collection){
+    public long chain_different_stream_operations_log_filter_log_and_count_the_collection(Predicate<String> filterFunction, Collection<String> collection){
         return 0;
     }
 
