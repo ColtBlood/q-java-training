@@ -118,7 +118,7 @@ public class StreamsTest {
 
     @Test
     public void validate_if_collection_only_has_integers_above_5(){
-        Collection input = Arrays.asList(6, 17, 2040592, 9);
+        Collection<Integer> input = Arrays.asList(6, 17, 2040592, 9);
         assertTrue(test.validate_if_collection_only_has_integers_above_5(input));
     }
 
