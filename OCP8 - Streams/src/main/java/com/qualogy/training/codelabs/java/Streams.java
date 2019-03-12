@@ -16,7 +16,7 @@ public class Streams {
     /*
     * This method gets a stream and expects any type of collection to be returned.
     **/
-    public Collection stream_to_collection(Stream stream){
+    public Collection stream_to_collection(Stream<Object> stream){
         return null;
     }
 
@@ -54,7 +54,7 @@ public class Streams {
     /**
      * This method takes a collection, using the stream obtain the amount of entries within the collection and return it
      */
-    public long count_the_amount_of_entries_in_the_collection(Collection collection){
+    public long count_the_amount_of_entries_in_the_collection(Collection<String> collection){
         return 0;
     }
 
@@ -76,7 +76,7 @@ public class Streams {
     /**
      * This method gets a collection which contains all kind of objects, check if it contains a String
      */
-    public boolean validate_if_collection_contains_a_string(Collection collection){
+    public boolean validate_if_collection_contains_a_string(Collection<Object> collection){
         return false;
     }
 
@@ -91,14 +91,14 @@ public class Streams {
      * This method gets a collection of objects, in this case Strings, there are duplicates within this collection, you have to filter out the duplicates
      * You have learned the .filter method before so try solving this codelab without using the .filter function
      */
-    public Collection remove_all_duplicates_from_the_stream_without_using_filter(Collection collection){
+    public Collection remove_all_duplicates_from_the_stream_without_using_filter(Collection<Object> collection){
        return null;
     }
 
     /**
      * You will get a collection which has a size of 7, trim it down to 5 using streams
      */
-    public Collection trim_the_collection_to_a_maximum_size(Collection collection){
+    public Collection trim_the_collection_to_a_maximum_size(Collection<String> collection){
         return null;
     }
 }
