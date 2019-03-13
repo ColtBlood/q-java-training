@@ -44,13 +44,14 @@ public class LambdasTest {
         assertEquals(new Integer(14), result.apply(7));
     }
 
+    @Test
     public void execute_a_function_lambda(){
-        assertEquals("7", test.execute_a_function_lambda(String::valueOf));
+        assertEquals("7", test.execute_a_function_lambda(String::valueOf, 7));
     }
 
     @Test
     public void create_a_function_which_guarantees_the_input_to_be_of_the_same_type_as_the_return_type(){
-        assertTrue(test.create_a_lambda_which_guarantees_the_input_to_be_of_the_same_type_as_the_return_type() instanceof UnaryOperator);
+        assertEquals(UnaryOperator.class, test.find_a_function_type_which_guarantees_the_input_to_be_of_the_same_type_as_the_return_type());
     }
 
     @Test
