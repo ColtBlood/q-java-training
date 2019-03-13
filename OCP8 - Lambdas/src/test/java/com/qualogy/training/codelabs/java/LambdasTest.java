@@ -110,7 +110,7 @@ public class LambdasTest {
 
     @Test
     public void create_a_predicate_which_accepts_primitive_longs_so_no_boxing(){
-        assertTrue(test.create_a_predicate_which_accepts_primitive_longs_so_no_boxing() instanceof LongPredicate);
+        assertEquals(LongPredicate.class, test.find_a_predicate_which_accepts_primitive_longs_so_no_boxing());
     }
 
     @After

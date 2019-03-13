@@ -61,31 +61,72 @@ public class Lambdas {
         return null;
     }
 
+    /**
+     * Lambdas know different type of lambdas, where as a Function takes an input and returns it, there can also be Lambdas
+     * which take an input and returns a boolean, these lambdas are called Predicates. their basic existence is to do a validation
+     * generally.
+     * A Predicate still has a type reference which declares the input type, in this case this Predicate will do its business
+     * only on Integers
+     */
     public Predicate<Integer> create_a_lambda_which_returns_true_if_the_integer_is_above_5(){
         return null;
     }
 
+    /**
+     * Just like before, we are going to see how you can execute a Predicate lambda, this time you will get an input param
+     * which is the Predicate and no matter what you pass in there(must be an Integer though) it will always return you true
+     */
     public boolean execute_a_predicate_lambda(Predicate<Integer> alwaysTrue){
         return false;
     }
 
+    /**
+     * Another type of Lambda is a Consumer, a consumer is as the name itself states a function which consumes something,
+     * in laymans terms if i eat a burger i got nothing to return to you as i ate it. Another principle with a Consumer
+     * which differs with the burger example is that you do not adjust the content of it.
+     * So lets create one, this method expects a Consumer to be returned, which takes a List and the List consists of Strings.
+     * The consumer will have to log every entry it gets to System.out.println
+     */
     public Consumer<List<String>> create_a_lambda_which_logs_all_the_entries_without_changing_the_list_itself(){
         return null;
     }
 
+    /**
+     * As always, we are going to execute the Lambda, a Consumer this time.
+     * What the consumer does, we dont know, but we can be sure it will not alter our list. you will not have to return
+     * anything but you will have to execute the consumer. There is no List supplied, so create your own List.
+     */
     public void execute_a_consumer_lambda(Consumer<List<String>> ssssh_its_a_secret){
         return;
     }
 
+    /**
+     * So we just have Consumers, which we can keep feeding data but will not return us anything, now we are going to look
+     * at a lambda which does it the other way round, we do not feed it anything but it will keep returning us something
+     * every time, nice right? free stuff.
+     * Lets create a supplier which will give us numbers, these numbers should always be above 100, you can do this with
+     * just random numbers above or just always 101 or something like that, as long as they are above 100
+     */
     public Supplier<Integer> create_a_lambda_which_returns_an_integer_which_is_always_above_100(){
         return null;
     }
 
+    /**
+     * For executing a Supplier it is quite simple, you get a random generator, it doesn't require any arguments, it just
+     * returns you stuff, in this case a Double, you will get a random number generator which is Math::random
+     */
     public Double execute_a_supplier_lambda(Supplier<Double> randomNumberGenerator){
         return null;
     }
 
-    public Predicate create_a_predicate_which_accepts_primitive_longs_so_no_boxing(){
+    /**
+     * So we had quite some lambdas and we like them, right? so if we use a whole lot of lambdas we could have some
+     * performance issues, think about boxing, boxing primitives to classes so if we pass in a 7 it will box it to an
+     * Integer(7) and back etc so with like 50 lambdas all over our code that kind of takes a hit. So there are some lambdas
+     * which are based on primitives, find the class and return the class type.
+     * So there are more types of these lambdas but for now knowing of their existence is fine.
+     */
+    public Class find_a_predicate_which_accepts_primitive_longs_so_no_boxing(){
         return null;
     }
 }
