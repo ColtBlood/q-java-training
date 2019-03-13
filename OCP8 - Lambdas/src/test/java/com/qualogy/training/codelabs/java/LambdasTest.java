@@ -100,7 +100,7 @@ public class LambdasTest {
         Supplier<Integer> result = test.create_a_lambda_which_returns_an_integer_which_is_always_above_100();
 
         Arrays.stream(new String[5])
-                .forEach((x) -> {assertTrue(result.get() > 100);});
+            .forEach((x) -> {assertTrue(result.get() > 100);});
     }
 
     @Test
